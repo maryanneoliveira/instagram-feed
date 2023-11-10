@@ -12,11 +12,21 @@ export default function Header() {
         </TouchableOpacity>
 
         <TouchableOpacity>
+        <Image
+            source={require('../../../assets/like.png')}
+            style={styles.coracao}
+            />
+        </TouchableOpacity>
+        
+
+        <TouchableOpacity>
             <Image
             source={require('../../../assets/direct.png')}
             style={styles.direct}
             />
         </TouchableOpacity>
+
+      
    </View>
   );
 }
@@ -31,17 +41,32 @@ const styles = StyleSheet.create({
         paddingHorizontal: 8,
         borderBottomWidth: 0.7,
         shadowColor: '#fff',
-        elevation: 5
+        elevation: 5,
+        marginBottom:2,
+        marginTop:30
 
     },
     logo:{
-        width:105,
+        width:150,
         height: 35
     },
     direct:{
-        height: 25,
-        width: 25,
-        marginTop: 7
-    }
+        height: 40,
+        width: 35,
+        marginTop: 7,
+        marginRight:15
+    },
+
+    coracao:{
+        
+         height: 35,
+        width: 30,
+        marginTop: 7,
+        marginRight:-100,
+        marginLeft:60
+        }
+       
+    
+
     
   });
